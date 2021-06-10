@@ -1,0 +1,11 @@
+# Build and Release Folders
+.idea
+venv
+Cython
+__pycache__
+yelp_regression_project
+twitter_classification_project
+UnsupervisedML/masculinity_project
+UnsupervisedML/Capstone/capstone_instructions.md
+UnsupervisedML/Capstone/profiles.*
+Test
