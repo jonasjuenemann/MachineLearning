@@ -1,3 +1,5 @@
+from collections import Counter
+
 from tree import print_tree
 
 """Wir werden den "greedy" approach benutzen, also den größtmoeglichen akutellen gain finden und splitten, unabh. davon ob der split spaeter noch hoeheren Value
@@ -13,7 +15,7 @@ labels2 = ["unacc", "unacc", "unacc", "unacc", "unacc", "unacc"]
 
 # Gini Koeffizient zum ermitteln der "purity" ein Wert der angibt, wie eindeutig eine Zuordnung von labels fuer etwas ist. 0 -> sehr gut
 def gini(labels):
-    impurity = 1
+    impurity: int = 1
     label_counts = Counter(labels)
     print(label_counts)
     for label in label_counts:
